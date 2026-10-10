@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Julian Bowen and Jerith Gurusubburam" />
+    <meta
+      name="description"
+      content="Post or edit a classical concert in Boston."
+    />
+    <title>Post a Concert | Concert Quest</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/concert-form.css" />
+    <script type="module" src="js/concert-form.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-header__brand" href="index.html">Concert Quest</a>
+      <nav class="site-header__nav">
+        <a href="index.html">Concerts</a>
+        <a href="concert-form.html">Post a concert</a>
+      </nav>
+    </header>
+    <main class="page">
+      <h1>Post a concert</h1>
+      <!-- Reused for editing: concert-form.html?id=<concertId> -->
+      <form class="concert-form" id="concert-form">
+        <!-- TODO: ensemble, venue, date/time, program, price, free checkbox,
+             ticket link, poster name, passcode -->
+        <button type="submit">Save concert</button>
+      </form>
+    </main>
+    <footer class="site-footer">
+      <p>Built for CS5610 by Julian Bowen and Jerith Gurusubburam.</p>
+    </footer>
+  </body>
+</html>

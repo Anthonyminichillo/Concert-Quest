@@ -1,0 +1,14 @@
+node_modules/
+
+# secrets: never commit the real Mongo URI
+.env
+
+# editor / OS cruft
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# logs
+npm-debug.log*
+*.log

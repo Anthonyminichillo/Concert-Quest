@@ -1,0 +1,3 @@
+// Home page: render the concert list client-side. (Julian Bowen)
+// TODO: fetch /concerts (with ?free=true when the box is checked) and render
+// one <li class="concert-card"> per concert linking to concert.html?id=...

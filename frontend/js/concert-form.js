@@ -1,0 +1,3 @@
+// Post / edit concert form. (Julian Bowen)
+// TODO: if ?id= is present, load the concert and prefill the form (edit mode).
+// On submit, POST or PUT, then go to concert.html?id=...

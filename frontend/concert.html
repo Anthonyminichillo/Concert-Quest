@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Julian Bowen and Jerith Gurusubburam" />
+    <meta name="description" content="Concert details and reviews." />
+    <title>Concert | Concert Quest</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/reviews.css" />
+    <link rel="stylesheet" href="css/passcode-dialog.css" />
+    <script type="module" src="js/concert.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-header__brand" href="index.html">Concert Quest</a>
+      <nav class="site-header__nav">
+        <a href="index.html">Concerts</a>
+        <a href="concert-form.html">Post a concert</a>
+      </nav>
+    </header>
+    <main class="page">
+      <!-- concert.html?id=<concertId> -->
+      <article class="concert-detail" id="concert-detail"></article>
+
+      <section class="reviews" aria-labelledby="reviews-heading">
+        <h2 id="reviews-heading">Reviews</h2>
+        <ul class="reviews__list" id="review-list"></ul>
+        <form class="review-form" id="review-form">
+          <!-- TODO (Jerith Gurusubburam): name, rating, review text, passcode -->
+          <button type="submit">Post review</button>
+        </form>
+      </section>
+    </main>
+
+    <dialog class="passcode-dialog" id="passcode-dialog">
+      <form method="dialog">
+        <label>
+          Passcode
+          <input type="password" name="passcode" required />
+        </label>
+        <menu class="passcode-dialog__actions">
+          <button value="cancel" formnovalidate>Cancel</button>
+          <button value="confirm">Confirm</button>
+        </menu>
+      </form>
+    </dialog>
+    <footer class="site-footer">
+      <p>Built for CS5610 by Julian Bowen and Jerith Gurusubburam.</p>
+    </footer>
+  </body>
+</html>

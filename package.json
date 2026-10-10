@@ -1,0 +1,37 @@
+{
+  "name": "concert-quest",
+  "version": "1.0.0",
+  "description": "Find live classical music in Boston. CS5610 Project 2 (Node + Express + Mongo).",
+  "author": "Julian Bowen and Jerith Gurusubburam",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbowen999/Concert-Quest.git"
+  },
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env backend/server.js",
+    "dev": "node --watch --env-file-if-exists=.env backend/server.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "check": "npm run format:check && npm run lint"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "mongodb": "^7.7.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10"
+  }
+}
