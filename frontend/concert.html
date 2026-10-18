@@ -31,7 +31,45 @@
         <h2 id="reviews-heading">Reviews</h2>
         <ul class="reviews__list" id="review-list"></ul>
         <form class="review-form" id="review-form">
-          <!-- TODO (Jerith Gurusubburam): name, rating, review text, passcode -->
+          <label class="review-form__field">
+            Your name
+            <input name="reviewerName" maxlength="100" required />
+          </label>
+          <label class="review-form__field">
+            Rating
+            <select name="rating" required>
+              <option value="" disabled selected>Choose a rating</option>
+              <option value="5">5 – Excellent</option>
+              <option value="4">4 – Good</option>
+              <option value="3">3 – Average</option>
+              <option value="2">2 – Poor</option>
+              <option value="1">1 – Terrible</option>
+            </select>
+          </label>
+          <label class="review-form__field">
+            Review
+            <textarea
+              name="comment"
+              rows="4"
+              maxlength="5000"
+              required
+            ></textarea>
+          </label>
+          <label class="review-form__field">
+            Passcode
+            <input
+              name="passcode"
+              type="password"
+              required
+              minlength="4"
+              autocomplete="new-password"
+              aria-describedby="review-passcode-hint"
+            />
+          </label>
+          <p class="review-form__hint" id="review-passcode-hint">
+            You'll need this to edit or delete your review later.
+          </p>
+          <p class="review-form__error" role="alert"></p>
           <button type="submit">Post review</button>
         </form>
       </section>
