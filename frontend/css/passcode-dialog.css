@@ -1,2 +1,62 @@
 /* passcode-dialog component */
 /* .passcode-dialog: the <dialog> on concert.html */
+
+.passcode-dialog {
+  width: min(26rem, calc(100% - 2 * var(--space-m)));
+  padding: var(--space-l);
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 25%);
+}
+
+.passcode-dialog::backdrop {
+  background: rgb(0 0 0 / 40%);
+}
+
+.passcode-dialog__message {
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+.passcode-dialog__message:empty {
+  display: none;
+}
+
+.passcode-dialog label {
+  display: grid;
+  gap: var(--space-s);
+  font-weight: 600;
+}
+
+.passcode-dialog input {
+  padding: var(--space-s);
+  font: inherit;
+  border: 1px solid #b5b5b5;
+  border-radius: 4px;
+}
+
+.passcode-dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-s);
+  margin: var(--space-m) 0 0;
+  padding: 0;
+}
+
+.passcode-dialog__actions button {
+  padding: var(--space-s) var(--space-m);
+  font: inherit;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.passcode-dialog__actions button[value="cancel"] {
+  color: var(--color-accent);
+  background: none;
+}
+
+.passcode-dialog__actions button[value="confirm"] {
+  color: #fff;
+  background: var(--color-accent);
+}

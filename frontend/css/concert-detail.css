@@ -1,0 +1,89 @@
+/* concert-detail component: the concert at the top of concert.html */
+
+.concert-detail {
+  margin-bottom: var(--space-l);
+}
+
+.concert-detail__title {
+  margin-bottom: var(--space-s);
+}
+
+.concert-detail__past {
+  padding: var(--space-s) var(--space-m);
+  background: #f3ece0;
+  border-left: 4px solid #b07d2b;
+  border-radius: 4px;
+}
+
+.concert-detail__facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: var(--space-s) var(--space-m);
+  margin: var(--space-m) 0;
+}
+
+.concert-detail__facts dt {
+  font-weight: 600;
+}
+
+.concert-detail__facts dd {
+  margin: 0;
+}
+
+.concert-detail__tickets,
+.concert-detail__edit,
+.concert-detail__delete {
+  display: inline-block;
+  padding: var(--space-s) var(--space-m);
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.concert-detail__tickets {
+  color: #fff;
+  background: var(--color-accent);
+}
+
+.concert-detail__program ul {
+  padding-left: 1.25rem;
+  line-height: 1.6;
+}
+
+.concert-detail__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-s);
+  padding-top: var(--space-m);
+  border-top: 1px solid #ddd;
+}
+
+.concert-detail__edit {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
+.concert-detail__delete {
+  color: #b00020;
+  background: none;
+  border: 1px solid #b00020;
+}
+
+.concert-detail__delete:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.concert-detail__status {
+  flex-basis: 100%;
+  margin: 0;
+  color: #b00020;
+  font-weight: 600;
+}
+
+.concert-detail__status:empty {
+  display: none;
+}
