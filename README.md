@@ -96,8 +96,6 @@ docs/DESIGN.md        design document
 
 ## Use of GenAI Tools
 
-TODO (Julian Bowen): review my section below before submitting.
-
 **Julian Bowen** used Claude Code (Anthropic's Claude Opus 5.5) as a pair
 programmer for the concerts side. It helped plan the data shape and division of
 work, wrote first drafts of the shared passcode module, the concerts API, the
