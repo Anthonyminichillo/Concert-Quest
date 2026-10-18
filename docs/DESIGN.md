@@ -59,22 +59,22 @@ Rosa is a longtime concertgoer who keeps the board clean by removing spam and ou
 
 Lists upcoming concerts sorted by date, with a free event filter and a button to post a new concert.
 
-![Home page mockup](docs/mockups/home.jpg)
+![Home page mockup](mockups/home.jpg)
 
 ### Post Concert Form
 
 Form for adding a concert: ensemble, venue, date and time, program, price, free event checkbox, ticket link, poster name, and passcode. The same form is reused for editing.
 
-![Post concert form mockup](docs/mockups/post-concert.jpg)
+![Post concert form mockup](mockups/post-concert.jpg)
 
 ### Concert Detail Page
 
 Shows full concert information, the list of reviews, and a form for writing a review.
 
-![Concert detail page mockup](docs/mockups/concert-detail.jpg)
+![Concert detail page mockup](mockups/concert-detail.jpg)
 
 ### Passcode Prompt
 
 Dialog shown when a user clicks edit or delete on a concert or review. Accepts the post's passcode or the admin passcode.
 
-![Passcode prompt mockup](docs/mockups/passcode-prompt.jpg)
+![Passcode prompt mockup](mockups/passcode-prompt.jpg)
