@@ -25,7 +25,7 @@ moderator fix or remove anything.
 
 ## Screenshot
 
-TODO: `docs/screenshot.png`
+![Concert Quest home page](docs/screenshot.png)
 
 ## Instructions to Build
 
@@ -111,9 +111,10 @@ feature: the db/reviews.js data layer and routes/reviews.js API (mirroring the
 existing concerts module's conventions), and the reviews UI on concert.html
 (list, post, inline edit/delete with passcode checks). I reviewed each diff
 before committing, manually tested the full flow (including edge cases like
-wrong passcodes and empty states) against a throwaway in-memory MongoDB, and
+wrong passcodes and empty states) against a throwaway in-memory MongoDB,
 incorporated feedback from Julian's code review (reload-after-post ordering,
-accessibility labels, button styling, and prompt wording) before merging.
+accessibility labels, button styling, and prompt wording), then re-verified the
+review fixes with an automated headless-browser test before merging.
 
 ## Checklist
 
@@ -121,8 +122,8 @@ Tracking the assignment rubric.
 
 - [ ] Design document (description, personas, user stories, mockups): mockup
       images still need adding to `docs/mockups/`
-- [ ] Accomplishes all approved requirements: reviews UI still to do
-- [ ] Usable, with instructions: in-app intro + How to Use done; reviews to do
+- [x] Accomplishes all approved requirements: concerts and reviews both done
+- [x] Usable, with instructions: in-app intro + How to Use, including reviews
 - [x] Useful to a real user: real, sourced Boston concerts
 - [x] ESLint config, no errors
 - [x] Code organized: each page its own file, DB separate, CSS in folders
@@ -130,14 +131,12 @@ Tracking the assignment rubric.
 - [x] Client-side rendering with vanilla JS only
 - [x] At least one form
 - [x] Deployed on a public server
-- [ ] 2 Mongo collections with full CRUD: concerts done end to end; reviews
-      API done, UI to do
+- [x] 2 Mongo collections with full CRUD: concerts and reviews, both end to end
 - [x] Node + Express
 - [x] Formatted with Prettier
 - [x] Standard tags only (no `div` buttons; passcode prompt uses `<dialog>`)
 - [x] CSS organized by module
-- [ ] README: author, class link, objective, screenshot, build instructions:
-      screenshot to do
+- [x] README: author, class link, objective, screenshot, build instructions
 - [x] No exposed secrets (`.env` is gitignored, `.env.example` committed)
 - [x] `package.json` listing dependencies
 - [x] MIT license
