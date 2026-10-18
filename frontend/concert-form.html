@@ -54,16 +54,20 @@
             Free event
           </label>
           <label class="concert-form__field">
-            Ticket price ($)
+            Lowest ticket price ($)
             <input
               name="price"
               type="number"
               min="0"
               max="10000"
               step="0.01"
-              required
+              aria-describedby="price-hint"
             />
           </label>
+          <p class="concert-form__hint" id="price-hint">
+            Leave blank if you don't know it. Visitors will be pointed to the
+            ticket link instead.
+          </p>
         </fieldset>
         <label class="concert-form__field">
           Ticket link (optional)

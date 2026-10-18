@@ -1,7 +1,7 @@
 // /api/concerts (Julian Bowen)
 //
 // GET    /              upcoming concerts, soonest first
-//                        ?free=true  only free (price 0)
+//                        ?free=true  only free (price 0; null = unknown)
 //                        ?when=past  past concerts instead, most recent first
 // GET    /:id           one concert
 // POST   /              create; body is the concert plus { passcode }
@@ -25,7 +25,8 @@ const MAX_PRICE = 10000;
 const HAS_TIMEZONE = /(Z|[+-]\d{2}:\d{2})$/;
 
 // Returns { concert } with only the editable fields, or { error }.
-function parseConcert(body) {
+// Also used by seed.js so seeded concerts follow the same rules.
+export function parseConcert(body) {
   const errors = [];
 
   const text = (key, max, required = true) => {
@@ -44,14 +45,21 @@ function parseConcert(body) {
     errors.push("date must be an ISO date string with a timezone");
   }
 
-  // Number("") and Number(null) are 0, so a missing price would silently
-  // become free. Accept only numbers and non-empty numeric strings.
+  // A missing or empty price means "unknown" and is stored as null. It must
+  // never become 0, because 0 means free. Number("") and Number(null) are
+  // both 0, so check for those before converting.
+  const isMissing =
+    body.price === undefined ||
+    body.price === null ||
+    (typeof body.price === "string" && body.price.trim() === "");
   const isPriceLike =
-    typeof body.price === "number" ||
-    (typeof body.price === "string" && body.price.trim() !== "");
-  const price = isPriceLike ? Number(body.price) : NaN;
-  if (!Number.isFinite(price) || price < 0 || price > MAX_PRICE) {
-    errors.push(`price must be a number from 0 to ${MAX_PRICE}`);
+    typeof body.price === "number" || typeof body.price === "string";
+  let price = null;
+  if (!isMissing) {
+    price = isPriceLike ? Number(body.price) : NaN;
+    if (!Number.isFinite(price) || price < 0 || price > MAX_PRICE) {
+      errors.push(`price must be empty or a number from 0 to ${MAX_PRICE}`);
+    }
   }
 
   // Only http(s): a javascript: URL here would run when someone clicks it.
@@ -73,7 +81,7 @@ function parseConcert(body) {
     venue: text("venue", 200),
     date,
     program: text("program", 5000, false),
-    price: Math.round(price * 100) / 100,
+    price: price === null ? null : Math.round(price * 100) / 100,
     ticketUrl,
     posterName: text("posterName", 100),
   };

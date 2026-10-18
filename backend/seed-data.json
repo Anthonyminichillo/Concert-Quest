@@ -1,0 +1,252 @@
+[
+  {
+    "seedId": "bso-mozart-berlioz-2026-09-19",
+    "ensemble": "Boston Symphony Orchestra, Andris Nelsons, conductor; Emanuel Ax, piano",
+    "venue": "Symphony Hall",
+    "date": "2026-09-19T20:00:00-04:00",
+    "program": "Mozart: Piano Concerto No. 22, K. 482\nBerlioz: Symphonie fantastique",
+    "price": null,
+    "ticketUrl": "https://www.bso.org/events/sep-18-19-mozart-berlioz",
+    "sourceUrl": "https://www.bso.org/events/sep-18-19-mozart-berlioz"
+  },
+  {
+    "seedId": "boston-baroque-seasons-2026-09-20",
+    "ensemble": "Boston Baroque, Marc Minkowski, conductor; Lauren Snouffer, soprano; Andrew Turner, tenor; Brandon Cedel, bass-baritone",
+    "venue": "Jordan Hall, New England Conservatory",
+    "date": "2026-09-20T14:00:00-04:00",
+    "program": "Haydn: The Seasons (Die Jahreszeiten)",
+    "price": 25,
+    "ticketUrl": "https://baroque.boston/haydns-seasons",
+    "sourceUrl": "https://baroque.boston/haydns-seasons"
+  },
+  {
+    "seedId": "hh-art-of-living-2026-10-02",
+    "ensemble": "Handel and Haydn Society, Jonathan Cohen, conductor; Joélle Harvey, soprano; Paul Appleby, tenor; Michael Sumuel, bass-baritone; Regie Gibson, spoken word",
+    "venue": "Symphony Hall",
+    "date": "2026-10-02T19:30:00-04:00",
+    "program": "Handel: L'Allegro, il Penseroso ed il Moderato",
+    "price": null,
+    "ticketUrl": "https://handelandhaydn.org/concerts/26-27/the-art-of-living/",
+    "sourceUrl": "https://handelandhaydn.org/concerts/26-27/the-art-of-living/"
+  },
+  {
+    "seedId": "vivo-avery-gagliano-2026-10-08",
+    "ensemble": "Avery Gagliano, piano",
+    "venue": "Pickman Concert Hall, Longy School of Music, Cambridge",
+    "date": "2026-10-08T19:30:00-04:00",
+    "program": "Schumann: Novelette, Op. 21, No. 8\nFauré: Ballade in F-sharp major, Op. 19\nRzewski: Winnsboro Cotton Mill Blues\nKirchner: Interlude II\nSchumann: Symphonic Etudes, Op. 13",
+    "price": null,
+    "ticketUrl": "https://www.vivoperformingarts.org/productions/avery-gagliano/",
+    "sourceUrl": "https://www.vivoperformingarts.org/productions/avery-gagliano/"
+  },
+  {
+    "seedId": "nec-chamber-orchestra-2026-10-14",
+    "ensemble": "NEC Chamber Orchestra, Donald Palma, artistic director",
+    "venue": "Jordan Hall, New England Conservatory",
+    "date": "2026-10-14T19:30:00-04:00",
+    "program": "Grieg: Holberg Suite, Op. 40\nStravinsky: Concerto in D major (\"Basler\")\nWalton: Sonata for String Orchestra",
+    "price": 0,
+    "ticketUrl": "https://necmusic.edu/events/nec-chamber-orchestra/",
+    "sourceUrl": "https://necmusic.edu/events/nec-chamber-orchestra/"
+  },
+  {
+    "seedId": "longy-wayman-chin-2026-10-15",
+    "ensemble": "Wayman Chin, piano: Sweet Land (Longy faculty recital)",
+    "venue": "Pickman Concert Hall, Longy School of Music, Cambridge",
+    "date": "2026-10-15T19:00:00-04:00",
+    "program": "",
+    "price": 0,
+    "ticketUrl": "https://longy.edu/calendar/wayman-chin-sweet-land/",
+    "sourceUrl": "https://longy.edu/calendar/wayman-chin-sweet-land/"
+  },
+  {
+    "seedId": "nec-tuesday-night-new-music-2026-10-20",
+    "ensemble": "NEC Tuesday Night New Music: new works by student composers",
+    "venue": "Williams Hall, New England Conservatory",
+    "date": "2026-10-20T20:00:00-04:00",
+    "program": "Alvarado: Corre Corre que Tiran Piedras!\nLee: Gardenia\nMininberg: Soliloquy of the Solipsist\nSheng: Fanlin\nJippov: Playful Falcon\nChapman: Alto Sweet\nSeong: Sync.\nMcMurray: Allegro from Violin Concerto No. 1 in D minor\nZacharias: Time and Motion\nCrosson: Ave Maris Stella\nLi: 16:00 Beijing Time",
+    "price": 0,
+    "ticketUrl": "https://necmusic.edu/events/tuesday-night-new-music-3-2/",
+    "sourceUrl": "https://necmusic.edu/events/tuesday-night-new-music-3-2/"
+  },
+  {
+    "seedId": "nec-liederabend-lxxxiii-2026-10-21",
+    "ensemble": "NEC Liederabend LXXXIII: Shades of Romanticism, Part 1 (NEC voice and collaborative piano students)",
+    "venue": "Williams Hall, New England Conservatory",
+    "date": "2026-10-21T18:00:00-04:00",
+    "program": "Schubert: Der Götter Griechenlands\nSchubert: An die Entfernte\nSchubert: Wandrers Nachtlied II\nSchubert: Auflösung\nSchubert: Ganymed\nSchubert: Prometheus\nSchubert: Grenzen der Menschheit\nSchubert: Das Fischermädchen\nSchubert: Ihr Bild\nSchubert: Der Atlas\nSchubert: Der Doppelgänger\nBrahms: Dämmrung senkte sich von oben\nBrahms: Dein blaues Auge\nBrahms: Meerfahrt",
+    "price": 0,
+    "ticketUrl": "https://necmusic.edu/events/liederabend-lxxxiii/",
+    "sourceUrl": "https://necmusic.edu/events/liederabend-lxxxiii/"
+  },
+  {
+    "seedId": "nec-symphony-loebel-2026-10-21",
+    "ensemble": "NEC Symphony, David Loebel",
+    "venue": "Jordan Hall, New England Conservatory",
+    "date": "2026-10-21T19:30:00-04:00",
+    "program": "Jessie Montgomery: Overture\nHaydn: Symphony No. 88\nDvořák: Slavonic Dances, Op. 72, Nos. 2 and 6\nDvořák: Symphony No. 8",
+    "price": 0,
+    "ticketUrl": "https://necmusic.edu/events/nec-symphony-david-loebel-montgomery-haydn-and-dvok/",
+    "sourceUrl": "https://necmusic.edu/events/nec-symphony-david-loebel-montgomery-haydn-and-dvok/"
+  },
+  {
+    "seedId": "mit-family-weekend-2026-10-23",
+    "ensemble": "MIT Wind Ensemble and MIT Festival Jazz Ensemble, Frederick E. Harris, Jr., music director",
+    "venue": "Kresge Auditorium, MIT, Cambridge",
+    "date": "2026-10-23T20:00:00-04:00",
+    "program": "Copland: El Salón México\nShostakovich: Folk Dances\nGrainger: Irish Tune from County Derry\nGrainger: Shepherd's Hey\nKenneth Amis: Legacy\nSecond half: jazz by Ellington, Mingus, Jobim and others",
+    "price": 0,
+    "ticketUrl": "https://music.mit.edu/event/annual-family-weekend-concert-virtuosic-legacies/",
+    "sourceUrl": "https://music.mit.edu/event/annual-family-weekend-concert-virtuosic-legacies/"
+  },
+  {
+    "seedId": "longy-rufus-muller-2026-10-25",
+    "ensemble": "Rufus Müller, tenor; Kayo Iwama, piano",
+    "venue": "Pickman Concert Hall, Longy School of Music, Cambridge",
+    "date": "2026-10-25T19:00:00-04:00",
+    "program": "Schubert: Schwanengesang",
+    "price": 0,
+    "ticketUrl": "https://longy.edu/calendar/rufus-muller-schwanengesang/",
+    "sourceUrl": "https://longy.edu/calendar/rufus-muller-schwanengesang/"
+  },
+  {
+    "seedId": "bocon-bresnick-residency-2026-10-28",
+    "ensemble": "Martin Bresnick 80th Birthday Residency Concert: Boston Conservatory at Berklee students and faculty",
+    "venue": "Seully Hall, Boston Conservatory at Berklee",
+    "date": "2026-10-28T20:00:00-04:00",
+    "program": "Martin Bresnick: chamber works",
+    "price": 0,
+    "ticketUrl": "https://bostonconservatory.berklee.edu/events/martin-bresnick-residency-concert",
+    "sourceUrl": "https://bostonconservatory.berklee.edu/events/martin-bresnick-residency-concert"
+  },
+  {
+    "seedId": "bso-haydn-creation-2026-11-05",
+    "ensemble": "Boston Symphony Orchestra and Tanglewood Festival Chorus, Philippe Jordan, conductor; Louise Alder, soprano; Bogdan Volkov, tenor; David Steffens, bass-baritone",
+    "venue": "Symphony Hall",
+    "date": "2026-11-05T19:30:00-05:00",
+    "program": "Haydn: The Creation",
+    "price": null,
+    "ticketUrl": "https://www.bso.org/events/nov-5-7-haydn-the-creation",
+    "sourceUrl": "https://www.bso.org/events/nov-5-7-haydn-the-creation"
+  },
+  {
+    "seedId": "trinity-organ-kraft-cross-2026-11-06",
+    "ensemble": "Angela Kraft Cross, organ (Friday organ recital)",
+    "venue": "Trinity Church, Copley Square",
+    "date": "2026-11-06T12:15:00-05:00",
+    "program": "",
+    "price": 0,
+    "ticketUrl": "https://trinitychurchboston.org/music/organ-recitals/",
+    "sourceUrl": "https://trinitychurchboston.org/music/organ-recitals/"
+  },
+  {
+    "seedId": "afarcry-mighty-fortress-2026-11-07",
+    "ensemble": "A Far Cry with Boston Children's Chorus; Ariadne Greif, soprano; Clare McNamara, mezzo; Brian Giebler, tenor; Paul Max Tipton, bass",
+    "venue": "Old South Church",
+    "date": "2026-11-07T19:30:00-05:00",
+    "program": "inti figgis-vizueta: Talamh (land)\nBach: Ein feste Burg ist unser Gott, BWV 80\nJulius Eastman: Gay Guerrilla",
+    "price": null,
+    "ticketUrl": "https://afarcry.org/all-concerts/mighty-fortress",
+    "sourceUrl": "https://afarcry.org/all-concerts/mighty-fortress"
+  },
+  {
+    "seedId": "vivo-igor-levit-2026-11-08",
+    "ensemble": "Igor Levit, piano",
+    "venue": "Symphony Hall",
+    "date": "2026-11-08T15:00:00-05:00",
+    "program": "Beethoven: Piano Sonata No. 1 in F minor, Op. 2, No. 1\nBeethoven: Piano Sonata No. 17 in D minor, Op. 31, No. 2, \"The Tempest\"\nBeethoven: Piano Sonata No. 25 in G major, Op. 79\nBeethoven: Piano Sonata No. 21 in C major, Op. 53, \"Waldstein\"",
+    "price": null,
+    "ticketUrl": "https://www.vivoperformingarts.org/productions/igor-levit-2026/",
+    "sourceUrl": "https://www.vivoperformingarts.org/productions/igor-levit-2026/"
+  },
+  {
+    "seedId": "boston-baroque-xtet-italy-2026-11-13",
+    "ensemble": "Boston Baroque: The X-tet, with Amanda Forsythe, soprano, and Cristiano Contadin, viola da gamba",
+    "venue": "Seully Hall, Boston Conservatory at Berklee",
+    "date": "2026-11-13T19:30:00-05:00",
+    "program": "Maria Teresa Agnesi: \"Deh temprate, oh sommi Dei\" from Ulisse in Campania\nDario Castello: Sonata Quarta\nAntonio Bertali: Sonata à 6 in D minor\nTomaso Albinoni: Sinfonia a cinque\nVivaldi: Concerto for Violin and Viola da Gamba in A major, RV 546\nAntonio Archilei: \"Dalle più alte sfere\" from La pellegrina\nHandel: Armida abbandonata, HWV 105\nJohann Adolph Hasse: \"L'augelletto in lacci stretto\" from Didone abbandonata\nAnonymous: Tarantella del Gargano\nColin Jacobsen: Morgantina Studies",
+    "price": 30,
+    "ticketUrl": "https://baroque.boston/xtet-italy",
+    "sourceUrl": "https://baroque.boston/xtet-italy"
+  },
+  {
+    "seedId": "bcms-beethoven-dvorak-brahms-2026-11-15",
+    "ensemble": "Boston Chamber Music Society: David Bowlin, Calvin Alexander, violins; Marcus Thompson, viola; Raman Ramakrishnan, cello; Max Levinson, piano; Romie de Guise-Langlois, clarinet",
+    "venue": "Sanders Theatre, Cambridge",
+    "date": "2026-11-15T15:00:00-05:00",
+    "program": "Beethoven: Piano Trio No. 1 in E-flat major, Op. 1, No. 1\nDvořák: Terzetto in C major, Op. 74\nBrahms: Clarinet Quintet in B minor, Op. 115",
+    "price": null,
+    "ticketUrl": "https://bostonchambermusic.org/event/beethoven-dvorak-brahms/",
+    "sourceUrl": "https://bostonchambermusic.org/event/beethoven-dvorak-brahms/"
+  },
+  {
+    "seedId": "kings-chapel-ariel-quintet-2026-11-17",
+    "ensemble": "Ariel Woodwind Quintet (Tuesday noon recital)",
+    "venue": "King's Chapel",
+    "date": "2026-11-17T12:15:00-05:00",
+    "program": "",
+    "price": 0,
+    "ticketUrl": "https://www.kings-chapel.org/music/tuesday-recitals",
+    "sourceUrl": "https://www.kings-chapel.org/music/tuesday-recitals"
+  },
+  {
+    "seedId": "bso-mendelssohn-schumann-2026-11-19",
+    "ensemble": "Boston Symphony Orchestra, Samy Rachid, conductor; Jan Lisiecki, piano",
+    "venue": "Symphony Hall",
+    "date": "2026-11-19T19:30:00-05:00",
+    "program": "Weber: Overture to Oberon\nMendelssohn: Piano Concerto No. 1\nSchumann: Symphony No. 1, \"Spring\"",
+    "price": null,
+    "ticketUrl": "https://www.bso.org/events/nov-19-21-mendelssohn-schumann",
+    "sourceUrl": "https://www.bso.org/events/nov-19-21-mendelssohn-schumann"
+  },
+  {
+    "seedId": "bpo-schubert-bruckner-2026-11-22",
+    "ensemble": "Boston Philharmonic Orchestra, Benjamin Zander, conductor",
+    "venue": "Symphony Hall",
+    "date": "2026-11-22T15:00:00-05:00",
+    "program": "Schubert: Symphony No. 8, \"Unfinished\"\nBruckner: Symphony No. 5",
+    "price": null,
+    "ticketUrl": "https://www.bostonphil.org/2026-2027-bpo2-schubert-bruckner",
+    "sourceUrl": "https://www.bostonphil.org/2026-2027-bpo2-schubert-bruckner"
+  },
+  {
+    "seedId": "hh-messiah-2026-11-27",
+    "ensemble": "Handel and Haydn Society, Harry Christophers, conductor; Hilary Cronin, soprano; Christopher Lowrey, countertenor; Robert Murray, tenor; Roderick Williams, bass-baritone",
+    "venue": "Symphony Hall",
+    "date": "2026-11-27T19:30:00-05:00",
+    "program": "Handel: Messiah",
+    "price": null,
+    "ticketUrl": "https://handelandhaydn.org/concerts/26-27/messiah/",
+    "sourceUrl": "https://handelandhaydn.org/concerts/26-27/messiah/"
+  },
+  {
+    "seedId": "trinity-organ-ahn-2026-12-11",
+    "ensemble": "Hyeyeon Ahn, organ (Friday organ recital)",
+    "venue": "Trinity Church, Copley Square",
+    "date": "2026-12-11T12:15:00-05:00",
+    "program": "",
+    "price": 0,
+    "ticketUrl": "https://trinitychurchboston.org/music/organ-recitals/",
+    "sourceUrl": "https://trinitychurchboston.org/music/organ-recitals/"
+  },
+  {
+    "seedId": "boston-baroque-messiah-2026-12-13",
+    "ensemble": "Boston Baroque, Christoph Koncz, conductor; Liv Redpath, soprano; Sun-Ly Pierce, mezzo-soprano; Eric Ferring, tenor; Benjamin Appl, baritone",
+    "venue": "Jordan Hall, New England Conservatory",
+    "date": "2026-12-13T15:00:00-05:00",
+    "program": "Handel: Messiah",
+    "price": 25,
+    "ticketUrl": "https://baroque.boston/handels-messiah",
+    "sourceUrl": "https://baroque.boston/handels-messiah"
+  },
+  {
+    "seedId": "hh-baroque-christmas-2026-12-17",
+    "ensemble": "Handel and Haydn Society, Jonathan Cohen, conductor; Nicholas Mulroy, tenor; H+H Youth Choruses Concert Choir",
+    "venue": "Jordan Hall, New England Conservatory",
+    "date": "2026-12-17T19:30:00-05:00",
+    "program": "Schütz: Hodie Christus natus est, SWV 456\nVierdanck: Sonata No. 28\nPraetorius: Wie schön leuchtet der Morgenstern\nSchein: Intrada (Banchetto musicale)\nSchein: Gagliarda and Allemanda (Banchetto musicale)\nSchütz: Heute ist Christus, der Herr, geboren, SWV 439\nPraetorius: Ballet and La Bourée\nSchütz: Auf dem Gebirge, SWV 396\nSchein: Padouana (Banchetto musicale)\nSchütz: Siehe, es erschien der Engel, SWV 403\nSchütz: Die Weihnachtshistorie, SWV 435",
+    "price": null,
+    "ticketUrl": "https://handelandhaydn.org/concerts/26-27/baroque-christmas/",
+    "sourceUrl": "https://handelandhaydn.org/concerts/26-27/baroque-christmas/"
+  }
+]
