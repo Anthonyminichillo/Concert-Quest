@@ -40,6 +40,10 @@ async function loadForEdit() {
 
   document.querySelector("h1").textContent = "Edit concert";
   document.title = "Edit Concert | Concert Quest";
+  // Editing isn't "Post a concert", so don't mark that nav link as current.
+  document
+    .querySelector('[aria-current="page"]')
+    ?.removeAttribute("aria-current");
   document.getElementById("passcode-label").textContent = "Passcode";
   document.getElementById("passcode-hint").textContent =
     "Enter the passcode you chose when posting, or the admin passcode.";
