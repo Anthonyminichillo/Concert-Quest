@@ -65,7 +65,10 @@ npm run check   # Prettier + ESLint, read-only
   Deleting a concert also deletes its reviews.
 - **Moderate:** the admin passcode (`ADMIN_PASSCODE`) works in place of any
   poster's passcode.
-- **Reviews:** TODO (Jerith Gurusubburam)
+- **Read and write reviews:** on a concert's page, scroll to Reviews to read
+  what past attendees thought. To leave one, fill in your name, a 1–5 rating,
+  and a comment, and choose a passcode. You'll need it later to edit or delete
+  your review (or an admin passcode can do it on your behalf).
 
 ## Project Structure
 
@@ -93,8 +96,7 @@ docs/DESIGN.md        design document
 
 ## Use of GenAI Tools
 
-TODO: review and edit this section so it matches how each of us actually used
-GenAI.
+TODO (Julian Bowen): review my section below before submitting.
 
 **Julian Bowen** used Claude Code (Anthropic's Claude Opus 5.5) as a pair
 programmer for the concerts side. It helped plan the data shape and division of
@@ -106,7 +108,14 @@ page (kept as `sourceUrl` in `seed-data.json`), and helped with deploying to
 Render and Atlas. I reviewed and merged each change through a pull request.
 Commits it helped write are marked `Co-Authored-By: Claude`.
 
-**Jerith Gurusubburam:** TODO
+**Jerith Gurusubburam** used Claude Code throughout to implement the reviews
+feature: the db/reviews.js data layer and routes/reviews.js API (mirroring the
+existing concerts module's conventions), and the reviews UI on concert.html
+(list, post, inline edit/delete with passcode checks). I reviewed each diff
+before committing, manually tested the full flow (including edge cases like
+wrong passcodes and empty states) against a throwaway in-memory MongoDB, and
+incorporated feedback from Julian's code review (reload-after-post ordering,
+accessibility labels, button styling, and prompt wording) before merging.
 
 ## Checklist
 
