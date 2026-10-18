@@ -18,7 +18,8 @@ function toLocalInputValue(iso) {
   return new Date(date.getTime() - offsetMs).toISOString().slice(0, 16);
 }
 
-// Free means price 0; the price box is locked while "Free event" is checked.
+// Free means price 0 and a blank price means unknown. The price box is
+// locked while "Free event" is checked.
 function syncPrice() {
   price.disabled = isFree.checked;
   if (isFree.checked) price.value = "0";
@@ -33,7 +34,7 @@ async function loadForEdit() {
 
   for (const key of TEXT_FIELDS) form.elements[key].value = concert[key] ?? "";
   form.elements.date.value = toLocalInputValue(concert.date);
-  price.value = concert.price;
+  price.value = concert.price ?? "";
   isFree.checked = concert.price === 0;
   syncPrice();
 
@@ -59,7 +60,8 @@ form.addEventListener("submit", async (event) => {
     ...data,
     // The browser knows the user's timezone; the server stores UTC.
     date: new Date(data.date).toISOString(),
-    price: isFree.checked ? 0 : Number(data.price),
+    // Free is 0; a blank price box means unknown (null), not free.
+    price: isFree.checked ? 0 : data.price === "" ? null : Number(data.price),
   };
   delete body.isFree;
 

@@ -56,21 +56,21 @@ function card(concert) {
   const when = el("time", "concert-card__date", formatDate(concert.date));
   when.dateTime = concert.date;
 
-  const isFree = concert.price === 0;
-  const price = el(
-    "span",
-    isFree
-      ? "concert-card__price concert-card__price--free"
-      : "concert-card__price",
-    isFree ? "Free" : priceFormat.format(concert.price)
-  );
+  item.append(title, when, el("p", "concert-card__venue", concert.venue));
 
-  item.append(
-    title,
-    when,
-    el("p", "concert-card__venue", concert.venue),
-    price
-  );
+  // No badge when the price is unknown (null); the detail page explains.
+  if (concert.price != null) {
+    const isFree = concert.price === 0;
+    item.append(
+      el(
+        "span",
+        isFree
+          ? "concert-card__price concert-card__price--free"
+          : "concert-card__price",
+        isFree ? "Free" : priceFormat.format(concert.price)
+      )
+    );
+  }
 
   const firstPiece = concert.program?.split("\n").find((line) => line.trim());
   if (firstPiece) {

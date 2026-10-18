@@ -25,8 +25,13 @@ Requires Node 22.9+ and a MongoDB database (Atlas or local).
 ```bash
 npm install
 cp .env.example .env   # then fill in MONGO_URI and ADMIN_PASSCODE
+npm run seed           # optional: load real Boston concerts from backend/seed-data.json
 npm run dev            # http://localhost:3000, restarts on save
 ```
+
+`npm run seed` is safe to re-run: it updates the concerts it added before and
+leaves user posts (and reviews) alone. Seeded concerts can only be edited with
+the admin passcode.
 
 Before committing:
 

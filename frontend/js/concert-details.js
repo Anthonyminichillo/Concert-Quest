@@ -30,6 +30,14 @@ function isWebLink(url) {
   }
 }
 
+// price is the lowest ticket price, 0 for free, or null when unknown.
+// The ticket link is only shown for upcoming concerts.
+function formatPrice({ price, ticketUrl }, isPast) {
+  if (price === 0) return "Free";
+  if (price != null) return `From ${priceFormat.format(price)}`;
+  return ticketUrl && !isPast ? "See the ticket link" : "Not listed";
+}
+
 // `value` is a string or a node; append() adds strings as plain text.
 function detailRow(list, label, value) {
   const dd = el("dd");
@@ -49,11 +57,7 @@ export function renderConcertDetails(container, concert) {
   when.dateTime = concert.date;
   detailRow(facts, "When", when);
   detailRow(facts, "Where", concert.venue);
-  detailRow(
-    facts,
-    "Price",
-    concert.price === 0 ? "Free" : priceFormat.format(concert.price)
-  );
+  detailRow(facts, "Price", formatPrice(concert, isPast));
   detailRow(facts, "Posted by", concert.posterName);
 
   container.replaceChildren(heading);
