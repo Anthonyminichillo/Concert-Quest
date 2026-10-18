@@ -8,6 +8,7 @@
     <title>Concert | Concert Quest</title>
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/concert-detail.css" />
     <link rel="stylesheet" href="css/reviews.css" />
     <link rel="stylesheet" href="css/passcode-dialog.css" />
     <script type="module" src="js/concert.js"></script>
@@ -22,9 +23,11 @@
     </header>
     <main class="page">
       <!-- concert.html?id=<concertId> -->
-      <article class="concert-detail" id="concert-detail"></article>
+      <article class="concert-detail" id="concert-detail">
+        <p role="status">Loading concert…</p>
+      </article>
 
-      <section class="reviews" aria-labelledby="reviews-heading">
+      <section class="reviews" id="reviews" aria-labelledby="reviews-heading">
         <h2 id="reviews-heading">Reviews</h2>
         <ul class="reviews__list" id="review-list"></ul>
         <form class="review-form" id="review-form">
@@ -36,6 +39,7 @@
 
     <dialog class="passcode-dialog" id="passcode-dialog">
       <form method="dialog">
+        <p class="passcode-dialog__message" id="passcode-message"></p>
         <label>
           Passcode
           <input type="password" name="passcode" required />
