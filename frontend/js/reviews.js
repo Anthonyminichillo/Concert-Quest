@@ -116,6 +116,11 @@ export function initReviews(concert) {
     commentField.rows = 4;
     commentField.value = review.comment;
 
+    const ratingLabel = el("label", "review-form__field", "Rating");
+    ratingLabel.append(ratingSelect);
+    const commentLabel = el("label", "review-form__field", "Review");
+    commentLabel.append(commentField);
+
     const error = el("p", "reviews__status");
     error.setAttribute("role", "alert");
 
@@ -127,7 +132,7 @@ export function initReviews(concert) {
     const actions = el("div", "reviews__actions");
     actions.append(saveButton, cancelButton);
 
-    editForm.append(ratingSelect, commentField, error, actions);
+    editForm.append(ratingLabel, commentLabel, error, actions);
     item.replaceChildren(editForm);
 
     cancelButton.addEventListener("click", () => showView(item, review));
@@ -135,7 +140,9 @@ export function initReviews(concert) {
     editForm.addEventListener("submit", async (event) => {
       event.preventDefault();
       error.textContent = "";
-      const passcode = await askPasscode("Save changes to this review?");
+      const passcode = await askPasscode(
+        "Save changes to this review? Enter the passcode it was posted with, or the admin passcode."
+      );
       if (passcode === null) return;
 
       saveButton.disabled = true;
@@ -165,7 +172,9 @@ export function initReviews(concert) {
 
   async function deleteReview(item, review, status, button) {
     status.textContent = "";
-    const passcode = await askPasscode("Delete this review?");
+    const passcode = await askPasscode(
+      "Delete this review? Enter the passcode it was posted with, or the admin passcode."
+    );
     if (passcode === null) return;
 
     button.disabled = true;
@@ -196,7 +205,7 @@ export function initReviews(concert) {
 
     submitButton.disabled = true;
     try {
-      const created = await api("/reviews", {
+      await api("/reviews", {
         method: "POST",
         body: {
           reviewerName: data.reviewerName,
@@ -207,9 +216,7 @@ export function initReviews(concert) {
         },
       });
       form.reset();
-      const empty = list.querySelector(".reviews__empty");
-      if (empty) empty.remove();
-      list.append(makeItem(created));
+      await load();
     } catch (err) {
       formError.textContent = err.message;
     } finally {

@@ -118,6 +118,14 @@
   cursor: pointer;
 }
 
+/* Outlined red like .concert-detail__delete; the extra class outranks
+   .reviews__actions button above. */
+.reviews__actions .reviews__delete {
+  color: #b00020;
+  background: none;
+  border: 1px solid #b00020;
+}
+
 .review-form button[type="submit"]:disabled {
   opacity: 0.6;
   cursor: wait;
