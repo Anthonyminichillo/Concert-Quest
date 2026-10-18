@@ -1,2 +1,132 @@
-/* reviews component */
-/* .reviews, .review-form (Jerith Gurusubburam) */
+/* reviews component: .reviews, .reviews__item, .review-form */
+
+.reviews__list {
+  display: grid;
+  gap: var(--space-m);
+  margin: var(--space-m) 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__empty {
+  color: #555;
+}
+
+.reviews__item {
+  padding: var(--space-m);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.reviews__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  align-items: baseline;
+  margin-bottom: var(--space-s);
+}
+
+.reviews__rating {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.reviews__meta time {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.reviews__comment {
+  margin: 0 0 var(--space-s);
+}
+
+.reviews__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-s);
+}
+
+.reviews__status {
+  flex-basis: 100%;
+  margin: 0;
+  color: #b00020;
+  font-weight: 600;
+}
+
+.reviews__status:empty {
+  display: none;
+}
+
+.reviews__edit-form {
+  display: grid;
+  gap: var(--space-s);
+}
+
+.review-form {
+  display: grid;
+  gap: var(--space-m);
+  max-width: 36rem;
+  margin-top: var(--space-l);
+}
+
+.review-form__field {
+  display: grid;
+  gap: var(--space-s);
+  font-weight: 600;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea,
+.reviews__edit-form select,
+.reviews__edit-form textarea {
+  width: 100%;
+  padding: var(--space-s);
+  font: inherit;
+  font-weight: normal;
+  border: 1px solid #b5b5b5;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.review-form__hint {
+  margin: calc(-1 * var(--space-s)) 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.review-form__error {
+  margin: 0;
+  color: #b00020;
+  font-weight: 600;
+}
+
+.review-form__error:empty {
+  display: none;
+}
+
+.review-form button[type="submit"],
+.reviews__actions button {
+  padding: var(--space-s) var(--space-l);
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-accent);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Outlined red like .concert-detail__delete; the extra class outranks
+   .reviews__actions button above. */
+.reviews__actions .reviews__delete {
+  color: #b00020;
+  background: none;
+  border: 1px solid #b00020;
+}
+
+.review-form button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
