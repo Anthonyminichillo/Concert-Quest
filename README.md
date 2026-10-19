@@ -120,8 +120,7 @@ review fixes with an automated headless-browser test before merging.
 
 Tracking the assignment rubric.
 
-- [ ] Design document (description, personas, user stories, mockups): mockup
-      images still need adding to `docs/mockups/`
+- [x] Design document (description, personas, user stories, mockups)
 - [x] Accomplishes all approved requirements: concerts and reviews both done
 - [x] Usable, with instructions: in-app intro + How to Use, including reviews
 - [x] Useful to a real user: real, sourced Boston concerts
