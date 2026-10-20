@@ -8,8 +8,8 @@ backend with a vanilla JavaScript, client-side rendered frontend.
 - **Live site:** https://concert-quest.onrender.com (free tier: the first load after
   ~15 idle minutes takes 30–60 seconds)
 - **Design document:** [docs/DESIGN.md](docs/DESIGN.md)
-- **Demo video:** TODO
-- **Slides:** TODO
+- **Demo video:** https://youtu.be/fg5SKVBiIKk
+- **Slides:** https://docs.google.com/presentation/d/104N4uuNqqQtA_uxVZJiALImJAc7YdElG8PLtLlZKiGQ/edit?usp=sharing
 
 ## Project Objective
 
